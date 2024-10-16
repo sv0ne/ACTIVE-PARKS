@@ -1,0 +1,76 @@
+@use "variables";
+@use "breakpoints";
+
+///////////////////// ТЕГИ: Default ///////////////////////
+
+body{
+  color: variables.$black;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 120%;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica', 'Arial', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', sans-serif;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+  font-size: 15px !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+img, video{
+  object-fit: cover;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+button{
+  font-size: inherit;
+  line-height: inherit;
+  background-color: inherit;
+  position: static;
+  color: inherit;
+  > * {
+    pointer-events: none;
+  }
+}
+
+///////////////////// MARGIN-PADDING //////////////////////
+
+.ml-8{margin-left: 8px;}
+.mb-32{margin-bottom: 32px;}
+.p-16{padding: 16px;}
+.p-0-16{padding: 0 16px;}
+
+.nlc-mb-16 > *:not(:last-child){margin-bottom: 16px;}
+.nlc-mb-24 > *:not(:last-child){margin-bottom: 24px;}
+
+///////////////////////// FLEX ////////////////////////////
+
+.d-flex{display: flex;}
+.d-ifx{display: inline-flex;}
+.fww{flex-wrap: wrap;}
+.fdc{flex-direction: column;}
+
+.aic{align-items: center;}
+.aifs{align-items: flex-start;}
+.aife{align-items: flex-end;}
+
+.jcc{justify-content: center;}
+.jcsb{justify-content: space-between;}
+.jcfe{justify-content: flex-end;}
+
+.pos-a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+//////////////////////////////////////////////////////////////////

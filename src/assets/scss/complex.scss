@@ -1,0 +1,15 @@
+@use "breakpoints";
+@use "variables";
+@use "base";
+@use "text";
+
+//////////////////////// Сетка ////////////////////////////
+
+.container{
+  max-width: breakpoints.$mw+px; margin: 0 auto; width: 100%;
+}
+
+.link-2{
+  display: inline-block;
+  color: rgba(30, 189, 193, 1);
+}

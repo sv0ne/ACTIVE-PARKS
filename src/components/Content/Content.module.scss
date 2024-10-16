@@ -1,0 +1,40 @@
+@use "src/assets/scss/breakpoints";
+
+.content{
+  padding: 40px 16px 74px 16px;
+  &__wrap{
+    border-radius: 18px;
+    border: 7px dashed rgba(255, 0, 0, 1);
+    padding: 32px 16px 39px 16px;
+  }
+  &__body{
+    padding-top: 80px;
+    max-width: 790px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    @media (max-width: breakpoints.$md3+px){
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+.banner{
+  flex: 1;
+  &__image{
+    width: 100%;
+  }
+  &__title{
+    margin-top: 16px;
+    padding-left: 78px;
+    font-size: 30px;
+    line-height: 37.66px;
+  }
+  &__text{
+    margin-top: 12px;
+    padding-left: 78px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 22.3px;
+  }
+}

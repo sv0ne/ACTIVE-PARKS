@@ -1,0 +1,17 @@
+/* ВНИМАНИЕ!!! Если добавляешь или изменяешь тут переменные, измени или добавь их и в файле _variables.scss  */
+
+:root{
+  --color-blue: #3F69FF;
+  --color-white: #FFF;
+  --color-black: #2B2B42;
+  --color-gray: #E1E1E7;
+  --color-darkGray: #88889E;
+  --color-lightGray: rgba(136, 136, 158, 0.1);
+  --color-yellow: #FFB34F;
+  --color-red: #F20056;
+  --color-lightRed: rgba(242, 0, 86, 0.1);
+  --color-violet: #933FFF;
+  --color-green: #36BB6B;
+  --color-orange: #FF8A00;
+  --lg-blue: linear-gradient(87.32deg, #0788FF 0%, #9900FF 100%);
+}

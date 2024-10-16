@@ -1,0 +1,59 @@
+.form{
+  flex: 0 0 300px;
+  &__title{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+  }
+  &__subtitle{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 44px;
+  }
+  &__submit{
+    background-color: rgba(68, 79, 96, 1);
+    padding: 9px;
+    width: 100%;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22.4px;
+    text-align: center;
+    &:hover{
+      background-color: rgba(68, 79, 96, 0.8);
+    }
+  }
+}
+
+.textField{
+  position: relative;
+  &__input{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid rgba(68, 79, 96, 1);
+    font-size: 16px;
+    padding: 8px;
+    &:focus + span{
+      //transition: 0.1s ease;
+
+    }
+  }
+  &__placeholder{
+    transition: 0.1s ease;
+    position: absolute;
+    padding: 0 4px;
+    background-color: #fff;
+    top: -8px;
+    left: 12px;
+    font-weight: 600;
+    pointer-events: none;
+  }
+  &__password{
+    position: absolute;
+    z-index: 2;
+    right: 8px;
+    top: 8px;
+  }
+}
